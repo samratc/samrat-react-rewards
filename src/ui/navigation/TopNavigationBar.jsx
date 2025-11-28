@@ -21,21 +21,6 @@ const TopNavigationBar = () => {
           </span>
         </div>
         
-        <nav className="hidden md:flex">
-          <ul className="flex gap-6 list-none m-0 p-0">
-            <li>
-              <Link
-                to="/"
-                onClick={closeMobileMenu}
-                className="text-white text-base font-medium no-underline transition-all duration-300 hover:text-primary-400 hover:scale-105 relative group"
-              >
-                Home
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-400 transition-all duration-300 group-hover:w-full"></span>
-              </Link>
-            </li>
-          </ul>
-        </nav>
-        
         <div
           data-testid="hamburger-menu"
           className={`relative w-8 h-6 cursor-pointer z-[11] md:hidden transition-transform duration-300 ${
